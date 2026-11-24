@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MINDTRACK — Your Personal Productivity Companion</title>
+  <meta name="description"
+    content="MINDTRACK brings your tasks, focus sessions, daily planning and productivity insights together in one simple, offline-first Android app." />
+  <meta name="theme-color" content="#090d16" />
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="MINDTRACK — Your Personal Productivity Companion" />
+  <meta property="og:description"
+    content="Stop planning to be productive. Start becoming productive. Tasks, Pomodoro focus timer, daily planner, and insights in one Android app." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/icon.png" />
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#home" class="brand" aria-label="MINDTRACK Home">
+        <img src="assets/icon.png" alt="MINDTRACK logo" class="brand__logo" width="32" height="32" />
+        <span class="brand__name">MINDTRACK</span>
+      </a>
+
+      <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link is-active">Home</a></li>
+          <li><a href="#features" class="nav__link">Features</a></li>
+          <li><a href="#how-it-works" class="nav__link">How It Works</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li>
+            <a href="#download" class="btn btn--nav" aria-label="Go to Download MINDTRACK section">
+              <span>Download</span>
+              <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false"
+        aria-controls="mobile-menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu Drawer -->
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav aria-label="Mobile navigation">
+        <ul class="mobile-menu__list">
+          <li><a href="#home" class="mobile-menu__link">Home</a></li>
+          <li><a href="#features" class="mobile-menu__link">Features</a></li>
+          <li><a href="#how-it-works" class="mobile-menu__link">How It Works</a></li>
+          <li><a href="#about" class="mobile-menu__link">About</a></li>
+          <li>
+            <a href="#download" class="btn btn--primary btn--full mobile-menu__cta">
+              <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              <span>Download for Android</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="hero__bg-glow" aria-hidden="true"></div>
+      <div class="hero__bg-grid" aria-hidden="true"></div>
+
+      <div class="container hero__grid">
+        <div class="hero__content hero-animate">
+          <p class="eyebrow eyebrow--dark">
+            <span class="eyebrow__dot" aria-hidden="true"></span>
+            YOUR PERSONAL PRODUCTIVITY COMPANION
+          </p>
+
+          <h1 class="hero__title" id="hero-heading">
+            Stop planning to be productive.
+            <span class="text-gradient">Start becoming productive.</span>
+          </h1>
+
+          <p class="hero__description">
+            MINDTRACK brings your tasks, focus sessions, daily planning and productivity insights together in one simple
+            app. Build better routines, stay focused and make every day count.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#download" class="btn btn--primary btn--lg" data-apk-download
+              aria-label="Download MINDTRACK for Android APK">
+              <svg class="icon icon--md" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85a.637.637 0 0 0-.83.22l-1.88 3.24a11.463 11.463 0 0 0-8.94 0L5.65 5.67a.643.643 0 0 0-.87-.2c-.28.18-.37.54-.22.83L6.4 9.48A10.78 10.78 0 0 0 1 18h22a10.78 10.78 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z" />
+              </svg>
+              <span>Download for Android</span>
+              <svg class="icon icon--sm btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <polyline points="19 12 12 19 5 12" />
+              </svg>
+            </a>
+
+            <a href="#features" class="btn btn--ghost btn--lg">
+              <span>Explore Features</span>
+              <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="hero__meta">
+            <span class="meta-pill">
+              <svg class="icon icon--xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                <line x1="12" y1="18" x2="12.01" y2="18" />
+              </svg>
+              Android APK Available
+            </span>
+            <span class="meta-divider" aria-hidden="true">·</span>
+            <span class="meta-pill">
+              <svg class="icon icon--xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="2" y1="2" x2="22" y2="22" />
+                <path d="M8.5 16.5a5 5 0 0 1 7 0" />
+                <path d="M2 8.82a15 15 0 0 1 4.17-2.65" />
+                <path d="M10.66 5c4.01-.36 8.14.9 11.34 3.76" />
+                <path d="M16.85 11.25a10 10 0 0 1 2.22 1.68" />
+                <path d="M5 12.86a10 10 0 0 1 5.17-2.8" />
+                <line x1="12" y1="20" x2="12.01" y2="20" />
+              </svg>
+              Offline-First Experience
+            </span>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Illustrative MINDTRACK Dashboard Composition -->
+        <div class="hero__visual hero-animate hero-animate--delay" role="img"
+          aria-label="Illustrative MINDTRACK dashboard preview showing tasks, Pomodoro focus timer, daily progress, and productivity statistics">
+          <div class="dashboard-stage" aria-hidden="true">
+            <!-- Main Dashboard Card -->
+            <div class="mock-dashboard">
+              <div class="mock-dashboard__header">
+                <div class="mock-dashboard__brand">
+                  <span class="mock-dot mock-dot--blue"></span>
+                  <span class="mock-dashboard__title">Today's Workspace</span>
+                </div>
+                <span class="mock-badge">Illustrative UI</span>
+              </div>
+
+              <!-- Daily Progress Bar -->
+              <div class="mock-progress">
+                <div class="mock-progress__row">
+                  <span class="mock-progress__label">Daily Goal Progress</span>
+                  <span class="mock-progress__value">78%</span>
+                </div>
+                <div class="mock-progress__track">
+                  <div class="mock-progress__fill" style="--target-width: 78%;"></div>
+                </div>
+              </div>
+
+              <!-- Mini Task List -->
+              <div class="mock-section-label">Priority Tasks</div>
+              <ul class="mock-task-list">
+                <li class="mock-task mock-task--done">
+                  <span class="mock-check mock-check--checked">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </span>
+                  <span class="mock-task__text">Outline morning study blocks</span>
+                  <span class="mock-tag mock-tag--done">Done</span>
+                </li>
+                <li class="mock-task">
+                  <span class="mock-check"></span>
+                  <span class="mock-task__text">Finish algorithms problem set</span>
+                  <span class="mock-tag mock-tag--high">High</span>
+                </li>
+                <li class="mock-task">
+                  <span class="mock-check"></span>
+                  <span class="mock-task__text">Review weekly habit streaks</span>
+                  <span class="mock-tag mock-tag--med">Today</span>
+                </li>
+              </ul>
+
+              <!-- Mini Schedule Row -->
+              <div class="mock-mini-schedule">
+                <div class="mock-mini-block mock-mini-block--active">
+                  <span class="mock-mini-block__time">09:30</span>
+                  <span class="mock-mini-block__name">Deep Focus Block</span>
+                </div>
+                <div class="mock-mini-block">
+                  <span class="mock-mini-block__time">11:30</span>
+                  <span class="mock-mini-block__name">Project Planning</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Card 1: Pomodoro Focus Timer -->
+            <div class="float-card float-card--timer">
+              <div class="float-card__top">
+                <span class="float-card__label">Focus Timer</span>
+                <span class="float-card__pill">Cycle 2/4</span>
+              </div>
+              <div class="mini-ring-wrap">
+                <svg class="mini-ring" viewBox="0 0 88 88">
+                  <circle class="mini-ring__bg" cx="44" cy="44" r="36" />
+                  <circle class="mini-ring__fg" cx="44" cy="44" r="36" />
+                </svg>
+                <div class="mini-ring__text">
+                  <span class="mini-ring__time">18:45</span>
+                  <span class="mini-ring__sub">Study Mode</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Card 2: Productivity Stats -->
+            <div class="float-card float-card--stats">
+              <div class="float-card__top">
+                <span class="float-card__label">Weekly Insights</span>
+                <span class="float-card__trend">+18%</span>
+              </div>
+              <div class="mini-bars">
+                <span class="mini-bar" style="--bar-h: 48%;"></span>
+                <span class="mini-bar" style="--bar-h: 66%;"></span>
+                <span class="mini-bar" style="--bar-h: 54%;"></span>
+                <span class="mini-bar" style="--bar-h: 82%;"></span>
+                <span class="mini-bar mini-bar--active" style="--bar-h: 94%;"></span>
+                <span class="mini-bar" style="--bar-h: 72%;"></span>
+                <span class="mini-bar" style="--bar-h: 60%;"></span>
+              </div>
+              <div class="float-card__footer">
+                <span><strong>3h 40m</strong> focused</span>
+                <span><strong>12d</strong> streak</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FEATURES SECTION (INTERACTIVE SLIDER) ==================== -->
+    <section class="section section--light" id="features" aria-labelledby="features-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">CORE FEATURES</p>
+          <h2 class="section-title" id="features-heading">Everything you need to get things done.</h2>
+          <p class="section-subtitle">Four powerful tools. One focused productivity experience.</p>
+        </div>
+
+        <!-- Feature Selector Tabs -->
+        <div class="feature-slider reveal" id="feature-slider">
+          <div class="feature-tabs-bar">
+            <div class="feature-tabs" role="tablist" aria-label="MINDTRACK core features">
+              <button type="button" class="feature-tab is-active" role="tab" id="tab-tasks" aria-selected="true"
+                aria-controls="panel-tasks" data-feature-tab="tasks" tabindex="0">
+                <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M9 11l3 3L22 4" />
+                  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+                </svg>
+                <span>Tasks</span>
+              </button>
+
+              <button type="button" class="feature-tab" role="tab" id="tab-focus" aria-selected="false"
+                aria-controls="panel-focus" data-feature-tab="focus" tabindex="-1">
+                <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+                <span>Focus</span>
+              </button>
+
+              <button type="button" class="feature-tab" role="tab" id="tab-planner" aria-selected="false"
+                aria-controls="panel-planner" data-feature-tab="planner" tabindex="-1">
+                <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+                <span>Planner</span>
+              </button>
+
+              <button type="button" class="feature-tab" role="tab" id="tab-insights" aria-selected="false"
+                aria-controls="panel-insights" data-feature-tab="insights" tabindex="-1">
+                <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="18" y1="20" x2="18" y2="10" />
+                  <line x1="12" y1="20" x2="12" y2="4" />
+                  <line x1="6" y1="20" x2="6" y2="14" />
+                </svg>
+                <span>Insights</span>
+              </button>
+            </div>
+
+            <div class="feature-slider__nav" aria-label="Switch feature slides">
+              <button type="button" class="slider-arrow" id="feature-prev" aria-label="Previous feature">
+                <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="15 18 9 12 15 6" />
+                </svg>
+              </button>
+              <button type="button" class="slider-arrow" id="feature-next" aria-label="Next feature">
+                <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="9 18 15 12 9 6" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Feature Panels -->
+          <div class="feature-panels">
+            <!-- PANEL 1: TASKS -->
+            <article class="feature-panel is-active" role="tabpanel" id="panel-tasks" aria-labelledby="tab-tasks"
+              data-feature-panel="tasks">
+              <div class="feature-panel__info">
+                <div class="feature-card__head">
+                  <div class="feature-icon feature-icon--blue" aria-hidden="true">
+                    <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M9 11l3 3L22 4" />
+                      <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+                    </svg>
+                  </div>
+                  <span class="feature-badge">Tasks</span>
+                </div>
+
+                <h3 class="feature-panel__title">Turn your to-do list into progress.</h3>
+                <p class="feature-panel__desc">
+                  Capture everything on your plate, prioritize what matters most, and stay in control of your daily
+                  workload.
+                </p>
+
+                <ul class="feature-benefits">
+                  <li>
+                    <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span>Create and manage daily tasks effortlessly</span>
+                  </li>
+                  <li>
+                    <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span>Set priorities, categories, due dates and reminders</span>
+                  </li>
+                  <li>
+                    <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span>Organize work with subtasks, tags and recurring tasks</span>
+                  </li>
+                  <li>
+                    <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span>Search and filter tasks in seconds</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Illustrative UI Preview: Tasks -->
+              <div class="feature-preview" aria-hidden="true">
+                <div class="ui-window">
+                  <div class="ui-window__bar">
+                    <span class="ui-window__title">My Tasks</span>
+                    <div class="ui-filter-pills">
+                      <span class="ui-pill ui-pill--active">All</span>
+                      <span class="ui-pill">Today</span>
+                      <span class="ui-pill">High</span>
+                    </div>
+                  </div>
+
+                  <div class="ui-task-items">
+                    <div class="ui-task ui-task--completed">
+                      <span class="ui-checkbox ui-checkbox--checked">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                          stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                      </span>
+                      <div class="ui-task__body">
+                        <span class="ui-task__name">Prepare weekly study notes</span>
+                        <div class="ui-task__meta">
+                          <span class="ui-chip ui-chip--neutral">Study</span>
+                          <span class="ui-date">Completed</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ui-task">
+                      <span class="ui-checkbox"></span>
+                      <div class="ui-task__body">
+                        <span class="ui-task__name">Submit architecture assignment</span>
+                        <div class="ui-task__meta">
+                          <span class="ui-chip ui-chip--high">High Priority</span>
+                          <span class="ui-date">Due Today · 2/3 subtasks</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ui-task">
+                      <span class="ui-checkbox"></span>
+                      <div class="ui-task__body">
+                        <span class="ui-task__name">Evening reading session</span>
+                        <div class="ui-task__meta">
+                          <span class="ui-chip ui-chip--purple">Recurring</span>
+                          <span class="ui-date">Daily · 8:00 PM</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- PANEL 2: FOCUS -->
+            <article class="feature-panel" role="tabpanel" id="panel-focus" aria-labelledby="tab-focus"
+              data-feature-panel="focus" hidden>
+              <div class="feature-panel__info">
+                <div class="feature-card__head">
+                  <div class="feature-icon feature-icon--violet" aria-hidden="true">
+                    <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10" />
+                      <polyline points="12 6 12 12 16 14" />
+                    </svg>
+                  </div>
+                  <span class="feature-badge feature-badge--violet">Focus</span>
+                </div>
+
+                <h3 class="feature-panel__title">Focus deeply. Get more done.</h3>
+                <p class="feature-panel__desc">
+                  Stay locked in on meaningful work with structured Pomodoro sessions, study mode, and intentional
+                  breaks.
+                </p>
+
+                <ul class="feature-benefits">
+                  <li>
+                    <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span>Pomodoro-style focus sessions built for flow</span>
+                  </li>
+                  <li>
+                    <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span>Custom focus and short/long break durations</span>
+                  </li>
+                  <li>
+                    <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span>Track completed focus sessions automatically</span>
+                  </li>
+                  <li>
+                    <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span>Study mode for distraction-free deep work</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Illustrative UI Preview: Focus Timer -->
+              <div class="feature-preview" aria-hidden="true">
+                <div class="ui-window ui-window--dark">
+                  <div class="ui-window__bar">
+                    <span class="ui-window__title">Pomodoro Focus</span>
+                    <span class="ui-mode-tag">Study Mode</span>
+                  </div>
+
+                  <div class="ui-timer">
+                    <div class="ui-timer__ring-wrap">
+                      <svg class="ui-timer__svg" viewBox="0 0 140 140">
+                        <circle class="ui-timer__track" cx="70" cy="70" r="58" />
+                        <circle class="ui-timer__progress" cx="70" cy="70" r="58" />
+                      </svg>
+                      <div class="ui-timer__readout">
+                        <span class="ui-timer__digits">24:15</span>
+                        <span class="ui-timer__phase">Focus Session</span>
+                      </div>
+                    </div>
+
+                    <div class="ui-timer__cycles">
+                      <span class="ui-cycle-dot ui-cycle-dot--done"></span>
+                      <span class="ui-cycle-dot ui-cycle-dot--active"></span>
+                      <span class="ui-cycle-dot"></span>
+                      <span class="ui-cycle-dot"></span>
+                      <span class="ui-cycle-label">Cycle 2 of 4</span>
+                    </div>
+
+                    <div class="ui-timer__controls">
+                      <span class="ui-control-pill">Short Break · 5m</span>
+                      <span class="ui-control-indicator">
+                        <svg class="icon icon--xs" viewBox="0 0 24 24" fill="currentColor">
+                          <rect x="6" y="4" width="4" height="16" rx="1" />
+                          <rect x="14" y="4" width="4" height="16" rx="1" />
+                        </svg>
+                        Active
+                      </span>
+                      <span class="ui-control-pill">Long · 15m</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- PANEL 3: PLANNER -->
+            <article class="feature-panel" role="tabpanel" id="panel-planner" aria-labelledby="tab-planner"
+              data-feature-panel="planner" hidden>
+              <div class="feature-panel__info">
+                <div class="feature-card__head">
+                  <div class="feature-icon feature-icon--teal" aria-hidden="true">
+                    <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                      <line x1="16" y1="2" x2="16" y2="6" />
+                      <line x1="8" y1="2" x2="8" y2="6" />
+                      <line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
+                  </div>
+                  <span class="feature-badge feature-badge--teal">Planner</span>
+                </div>
+
+                <h3 class="feature-panel__title">Give every day a clear direction.</h3>
+                <p class="feature-panel__desc">
+                  Map out your schedule visually, dedicate time blocks to key priorities, and stay ahead of upcoming
+                  commitments.
+                </p>
+
+                <ul class="feature-benefits">
+                  <li>
+                    <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span>Plan daily activities with clear structure</span>
+                  </li>
+                  <li>
+                    <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span>View tasks and commitments in a calendar</span>
+                  </li>
+                  <li>
+                    <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span>Schedule work and organize focused time blocks</span>
+                  </li>
+                  <li>
+                    <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span>Keep upcoming activities neatly organized</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Illustrative UI Preview: Planner -->
+              <div class="feature-preview" aria-hidden="true">
+                <div class="ui-window">
+                  <div class="ui-window__bar">
+                    <span class="ui-window__title">Daily Planner</span>
+                    <span class="ui-window__date">Tue, 24 Nov</span>
+                  </div>
+
+                  <div class="ui-calendar-strip">
+                    <span class="ui-day"><span>Mon</span><strong>23</strong></span>
+                    <span class="ui-day ui-day--active"><span>Tue</span><strong>24</strong></span>
+                    <span class="ui-day"><span>Wed</span><strong>25</strong></span>
+                    <span class="ui-day"><span>Thu</span><strong>26</strong></span>
+                    <span class="ui-day"><span>Fri</span><strong>27</strong></span>
+                  </div>
+
+                  <div class="ui-timeline">
+                    <div class="ui-slot">
+                      <span class="ui-slot__time">09:00</span>
+                      <div class="ui-block ui-block--blue">
+                        <span class="ui-block__title">Deep Work — Core Project</span>
+                        <span class="ui-block__sub">90 min · Time Block</span>
+                      </div>
+                    </div>
+                    <div class="ui-slot">
+                      <span class="ui-slot__time">11:00</span>
+                      <div class="ui-block ui-block--violet">
+                        <span class="ui-block__title">Review Scheduled Tasks</span>
+                        <span class="ui-block__sub">30 min · 4 tasks</span>
+                      </div>
+                    </div>
+                    <div class="ui-slot">
+                      <span class="ui-slot__time">14:30</span>
+                      <div class="ui-block ui-block--teal">
+                        <span class="ui-block__title">Study Session &amp; Notes</span>
+                        <span class="ui-block__sub">60 min · Focus Mode</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- PANEL 4: INSIGHTS -->
+            <article class="feature-panel" role="tabpanel" id="panel-insights" aria-labelledby="tab-insights"
+              data-feature-panel="insights" hidden>
+              <div class="feature-panel__info">
+                <div class="feature-card__head">
+                  <div class="feature-icon feature-icon--indigo" aria-hidden="true">
+                    <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="18" y1="20" x2="18" y2="10" />
+                      <line x1="12" y1="20" x2="12" y2="4" />
+                      <line x1="6" y1="20" x2="6" y2="14" />
+                    </svg>
+                  </div>
+                  <span class="feature-badge feature-badge--indigo">Insights</span>
+                </div>
+
+                <h3 class="feature-panel__title">See your progress. Improve every day.</h3>
+                <p class="feature-panel__desc">
+                  Turn daily effort into clear visual feedback so you can spot patterns, protect streaks, and build
+                  momentum.
+                </p>
+
+                <ul class="feature-benefits">
+                  <li>
+                    <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span>Monitor task completion and daily productivity</span>
+                  </li>
+                  <li>
+                    <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span>Track habits and maintain consistency streaks</span>
+                  </li>
+                  <li>
+                    <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span>Review focus-session history at a glance</span>
+                  </li>
+                  <li>
+                    <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span>Understand progress through charts and statistics</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Illustrative UI Preview: Insights -->
+              <div class="feature-preview" aria-hidden="true">
+                <div class="ui-window">
+                  <div class="ui-window__bar">
+                    <span class="ui-window__title">Productivity Insights</span>
+                    <span class="ui-pill ui-pill--active">This Week</span>
+                  </div>
+
+                  <div class="ui-stats-row">
+                    <div class="ui-stat-box">
+                      <span class="ui-stat-box__val">86%</span>
+                      <span class="ui-stat-box__lbl">Completion</span>
+                    </div>
+                    <div class="ui-stat-box">
+                      <span class="ui-stat-box__val">14d</span>
+                      <span class="ui-stat-box__lbl">Habit Streak</span>
+                    </div>
+                    <div class="ui-stat-box">
+                      <span class="ui-stat-box__val">18.5h</span>
+                      <span class="ui-stat-box__lbl">Focus Time</span>
+                    </div>
+                  </div>
+
+                  <div class="ui-chart">
+                    <div class="ui-chart__bars">
+                      <div class="ui-chart__col"><span class="ui-chart__bar" style="--bar-h: 52%;"></span><span>M</span>
+                      </div>
+                      <div class="ui-chart__col"><span class="ui-chart__bar" style="--bar-h: 74%;"></span><span>T</span>
+                      </div>
+                      <div class="ui-chart__col"><span class="ui-chart__bar" style="--bar-h: 64%;"></span><span>W</span>
+                      </div>
+                      <div class="ui-chart__col"><span class="ui-chart__bar ui-chart__bar--peak"
+                          style="--bar-h: 92%;"></span><span>T</span></div>
+                      <div class="ui-chart__col"><span class="ui-chart__bar" style="--bar-h: 80%;"></span><span>F</span>
+                      </div>
+                      <div class="ui-chart__col"><span class="ui-chart__bar" style="--bar-h: 58%;"></span><span>S</span>
+                      </div>
+                      <div class="ui-chart__col"><span class="ui-chart__bar" style="--bar-h: 68%;"></span><span>S</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="ui-habit-bar">
+                    <div class="ui-habit-bar__top">
+                      <span>Weekly Focus Goal</span>
+                      <strong>18.5 / 20 hrs</strong>
+                    </div>
+                    <div class="ui-habit-bar__track">
+                      <div class="ui-habit-bar__fill" style="--target-width: 92%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== HOW IT WORKS SECTION ==================== -->
+    <section class="section section--muted" id="how-it-works" aria-labelledby="how-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">HOW IT WORKS</p>
+          <h2 class="section-title" id="how-heading">Your productivity journey, simplified.</h2>
+          <p class="section-subtitle">Three straightforward steps to turn daily intentions into consistent results.</p>
+        </div>
+
+        <ol class="steps-grid">
+          <li class="step-card reveal">
+            <div class="step-card__top">
+              <span class="step-number">01</span>
+              <div class="step-icon" aria-hidden="true">
+                <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="8" y1="6" x2="21" y2="6" />
+                  <line x1="8" y1="12" x2="21" y2="12" />
+                  <line x1="8" y1="18" x2="21" y2="18" />
+                  <line x1="3" y1="6" x2="3.01" y2="6" />
+                  <line x1="3" y1="12" x2="3.01" y2="12" />
+                  <line x1="3" y1="18" x2="3.01" y2="18" />
+                </svg>
+              </div>
+            </div>
+            <h3 class="step-card__title">Plan</h3>
+            <p class="step-card__desc">
+              Organize your tasks and decide what deserves your attention.
+            </p>
+          </li>
+
+          <li class="step-card reveal">
+            <div class="step-card__top">
+              <span class="step-number">02</span>
+              <div class="step-icon" aria-hidden="true">
+                <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </div>
+            </div>
+            <h3 class="step-card__title">Focus</h3>
+            <p class="step-card__desc">
+              Work through your priorities with dedicated focus sessions.
+            </p>
+          </li>
+
+          <li class="step-card reveal">
+            <div class="step-card__top">
+              <span class="step-number">03</span>
+              <div class="step-icon" aria-hidden="true">
+                <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                  <polyline points="17 6 23 6 23 12" />
+                </svg>
+              </div>
+            </div>
+            <h3 class="step-card__title">Improve</h3>
+            <p class="step-card__desc">
+              Review your progress, build habits and keep getting better.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ==================== BENEFITS SECTION ==================== -->
+    <section class="section section--light" id="benefits" aria-labelledby="benefits-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">WHY MINDTRACK</p>
+          <h2 class="section-title" id="benefits-heading">Less distraction. More meaningful progress.</h2>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card reveal">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7" rx="1" />
+                <rect x="14" y="3" width="7" height="7" rx="1" />
+                <rect x="14" y="14" width="7" height="7" rx="1" />
+                <rect x="3" y="14" width="7" height="7" rx="1" />
+              </svg>
+            </div>
+            <h3 class="benefit-card__title">Stay organized.</h3>
+            <p class="benefit-card__desc">Keep your tasks and daily plans in one place.</p>
+          </div>
+
+          <div class="benefit-card reveal">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v4" />
+                <path d="M12 18v4" />
+                <path d="M4.93 4.93l2.83 2.83" />
+                <path d="M16.24 16.24l2.83 2.83" />
+                <path d="M2 12h4" />
+                <path d="M18 12h4" />
+                <path d="M4.93 19.07l2.83-2.83" />
+                <path d="M16.24 7.76l2.83-2.83" />
+              </svg>
+            </div>
+            <h3 class="benefit-card__title">Build consistency.</h3>
+            <p class="benefit-card__desc">Develop better habits and maintain your progress.</p>
+          </div>
+
+          <div class="benefit-card reveal">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <circle cx="12" cy="12" r="6" />
+                <circle cx="12" cy="12" r="2" />
+              </svg>
+            </div>
+            <h3 class="benefit-card__title">Improve focus.</h3>
+            <p class="benefit-card__desc">Create dedicated time for the work that matters.</p>
+          </div>
+
+          <div class="benefit-card reveal">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 3v18h18" />
+                <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3" />
+              </svg>
+            </div>
+            <h3 class="benefit-card__title">Track improvement.</h3>
+            <p class="benefit-card__desc">Use insights to understand and improve your productivity.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== OFFLINE-FIRST SECTION ==================== -->
+    <section class="section section--muted" id="offline" aria-labelledby="offline-heading">
+      <div class="container">
+        <div class="offline-card reveal">
+          <div class="offline-card__content">
+            <p class="eyebrow">LOCAL-FIRST DESIGN</p>
+            <h2 class="section-title section-title--left" id="offline-heading">
+              Your productivity. Without depending on the internet.
+            </h2>
+            <p class="offline-card__desc">
+              Manage your tasks, focus sessions, plans and habits with a local-first experience. Everything stays fast,
+              responsive and ready on your device whenever you need to work.
+            </p>
+
+            <ul class="offline-list">
+              <li>
+                <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>Create, update and complete tasks locally on your device</span>
+              </li>
+              <li>
+                <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>Run Pomodoro timers and study sessions without connectivity</span>
+              </li>
+              <li>
+                <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>Access your daily schedule, habits and progress history offline</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Offline Visual Illustration -->
+          <div class="offline-visual" aria-hidden="true">
+            <div class="phone-frame">
+              <div class="phone-frame__notch"></div>
+              <div class="phone-frame__screen">
+                <div class="phone-status">
+                  <span>Local Device</span>
+                  <span class="phone-offline-pill">
+                    <svg class="icon icon--xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="2" y1="2" x2="22" y2="22" />
+                      <path d="M8.5 16.5a5 5 0 0 1 7 0" />
+                      <path d="M5 12.86a10 10 0 0 1 5.17-2.8" />
+                      <path d="M16.85 11.25a10 10 0 0 1 2.22 1.68" />
+                      <line x1="12" y1="20" x2="12.01" y2="20" />
+                    </svg>
+                    Offline
+                  </span>
+                </div>
+
+                <div class="phone-hero-badge">
+                  <div class="phone-hero-badge__icon">
+                    <svg class="icon icon--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                      <polyline points="9 12 11 14 15 10" />
+                    </svg>
+                  </div>
+                  <strong>Ready Anywhere</strong>
+                  <span>Stored locally on Android</span>
+                </div>
+
+                <div class="phone-rows">
+                  <div class="phone-row">
+                    <span class="phone-row__dot phone-row__dot--blue"></span>
+                    <span>Tasks &amp; Subtasks</span>
+                    <span class="phone-row__ok">Local</span>
+                  </div>
+                  <div class="phone-row">
+                    <span class="phone-row__dot phone-row__dot--violet"></span>
+                    <span>Focus Sessions</span>
+                    <span class="phone-row__ok">Local</span>
+                  </div>
+                  <div class="phone-row">
+                    <span class="phone-row__dot phone-row__dot--teal"></span>
+                    <span>Planner &amp; Habits</span>
+                    <span class="phone-row__ok">Local</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section section--light" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid reveal">
+          <div class="about-content">
+            <p class="eyebrow">ABOUT MINDTRACK</p>
+            <h2 class="section-title section-title--left" id="about-heading">
+              Built to make everyday productivity simpler.
+            </h2>
+            <p class="about-content__desc">
+              MINDTRACK brings task management, focus sessions, daily planning, habit tracking and productivity insights
+              into one application. It is designed to help you build better routines and stay consistent with your
+              goals.
+            </p>
+          </div>
+
+          <div class="about-brand-card">
+            <div class="about-brand-card__top">
+              <img src="assets/icon.png" alt="MINDTRACK icon" width="48" height="48" class="about-brand-card__logo"
+                loading="lazy" />
+              <div>
+                <h3 class="about-brand-card__name">MINDTRACK</h3>
+                <p class="about-brand-card__tagline">Your Personal Productivity Companion</p>
+              </div>
+            </div>
+
+            <div class="about-pillars">
+              <span class="pillar-pill">Tasks</span>
+              <span class="pillar-pill">Focus</span>
+              <span class="pillar-pill">Planner</span>
+              <span class="pillar-pill">Insights</span>
+            </div>
+
+            <div class="about-brand-card__footer">
+              <span class="creator-credit">Made by Ayush</span>
+              <span class="platform-tag">Android Application</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==================== DOWNLOAD CTA SECTION ==================== -->
+    <section class="section download-section" id="download" aria-labelledby="download-heading">
+      <div class="download-section__glow" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="download-box reveal">
+          <p class="eyebrow eyebrow--dark">
+            <span class="eyebrow__dot" aria-hidden="true"></span>
+            DOWNLOAD FOR ANDROID
+          </p>
+
+          <h2 class="download-box__title" id="download-heading">
+            Make your next day more productive.
+          </h2>
+
+          <p class="download-box__desc">
+            Download MINDTRACK and bring your tasks, focus, planning and progress together.
+          </p>
+
+          <div class="download-box__action">
+            <a href="#download" class="btn btn--primary btn--xl download-btn" id="primary-download-btn"
+              data-apk-download aria-label="Download MINDTRACK for Android APK">
+              <svg class="icon icon--lg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85a.637.637 0 0 0-.83.22l-1.88 3.24a11.463 11.463 0 0 0-8.94 0L5.65 5.67a.643.643 0 0 0-.87-.2c-.28.18-.37.54-.22.83L6.4 9.48A10.78 10.78 0 0 0 1 18h22a10.78 10.78 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z" />
+              </svg>
+              <span>Download MINDTRACK for Android</span>
+              <span class="apk-badge">APK</span>
+              <svg class="icon icon--md btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <polyline points="19 12 12 19 5 12" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Helpful notice shown only when APK_DOWNLOAD_URL is still a placeholder -->
+          <div class="download-config-notice" id="download-config-notice" role="status" aria-live="polite" hidden></div>
+
+          <p class="download-box__note">
+            Android APK download. Installation may require allowing your browser to install apps from this source.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- ==================== FEEDBACK SECTION ==================== -->
+  <section class="section section--muted" id="feedback" aria-labelledby="feedback-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">SHARE YOUR THOUGHTS</p>
+        <h2 class="section-title" id="feedback-heading">Help Us Make MINDTRACK Better</h2>
+        <p class="section-subtitle">
+          Your feedback helps us improve MINDTRACK. Tell us what you like, what could be better, or what features you
+          would love to see.
+        </p>
+      </div>
+
+      <div class="feedback-card reveal">
+        <form class="feedback-form" id="feedback-form" novalidate>
+          <!-- Honeypot field for spam reduction (visually hidden) -->
+          <div class="sr-honeypot" aria-hidden="true">
+            <label for="feedback-website">Website</label>
+            <input type="text" id="feedback-website" name="website" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <div class="form-grid">
+            <!-- Name (Optional) -->
+            <div class="form-field">
+              <label class="form-label" for="feedback-name">
+                Name <span class="form-optional">(optional)</span>
+              </label>
+              <input type="text" id="feedback-name" name="name" class="form-input" placeholder="Your name"
+                maxlength="100" autocomplete="name" />
+            </div>
+
+            <!-- Email (Optional) -->
+            <div class="form-field">
+              <label class="form-label" for="feedback-email">
+                Email <span class="form-optional">(optional)</span>
+              </label>
+              <input type="email" id="feedback-email" name="email" class="form-input" placeholder="you@example.com"
+                maxlength="160" autocomplete="email" aria-describedby="feedback-email-error" />
+              <p class="form-error" id="feedback-email-error" role="alert" hidden></p>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <!-- Feedback Type (Required) -->
+            <div class="form-field">
+              <label class="form-label" for="feedback-type">
+                Feedback type <span class="form-required" aria-hidden="true">*</span>
+              </label>
+              <select id="feedback-type" name="feedbackType" class="form-input form-select" required
+                aria-required="true" aria-describedby="feedback-type-error">
+                <option value="" selected disabled>Select feedback type</option>
+                <option value="General Feedback">General Feedback</option>
+                <option value="Bug Report">Bug Report</option>
+                <option value="Feature Request">Feature Request</option>
+                <option value="UI/UX Suggestion">UI/UX Suggestion</option>
+                <option value="Other">Other</option>
+              </select>
+              <p class="form-error" id="feedback-type-error" role="alert" hidden></p>
+            </div>
+
+            <!-- Rating (Optional 1-5 stars) -->
+            <div class="form-field">
+              <span class="form-label" id="rating-label">
+                Rating <span class="form-optional">(optional)</span>
+              </span>
+              <div class="star-rating" role="radiogroup" aria-labelledby="rating-label">
+                <div class="star-rating__stars" id="star-rating-stars">
+                  <button type="button" class="star-btn" role="radio" aria-checked="false" aria-label="1 star"
+                    data-star="1">
+                    <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    </svg>
+                  </button>
+                  <button type="button" class="star-btn" role="radio" aria-checked="false" aria-label="2 stars"
+                    data-star="2">
+                    <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    </svg>
+                  </button>
+                  <button type="button" class="star-btn" role="radio" aria-checked="false" aria-label="3 stars"
+                    data-star="3">
+                    <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    </svg>
+                  </button>
+                  <button type="button" class="star-btn" role="radio" aria-checked="false" aria-label="4 stars"
+                    data-star="4">
+                    <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    </svg>
+                  </button>
+                  <button type="button" class="star-btn" role="radio" aria-checked="false" aria-label="5 stars"
+                    data-star="5">
+                    <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    </svg>
+                  </button>
+                </div>
+                <span class="star-rating__text" id="rating-text">Not rated</span>
+                <input type="hidden" id="feedback-rating" name="rating" value="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Feedback Message (Required) -->
+          <div class="form-field">
+            <div class="form-label-row">
+              <label class="form-label" for="feedback-message">
+                Feedback message <span class="form-required" aria-hidden="true">*</span>
+              </label>
+              <span class="char-counter" id="feedback-char-count" aria-live="polite">0 / 2,000</span>
+            </div>
+            <textarea id="feedback-message" name="message" class="form-input form-textarea" rows="5" maxlength="2000"
+              required aria-required="true"
+              placeholder="Share what you enjoy, report an issue, or suggest a feature for MINDTRACK..."
+              aria-describedby="feedback-message-error"></textarea>
+            <p class="form-error" id="feedback-message-error" role="alert" hidden></p>
+          </div>
+
+          <!-- Status / Feedback Banner -->
+          <div class="feedback-status" id="feedback-status" role="status" aria-live="polite" hidden></div>
+
+          <div class="feedback-form__actions">
+            <button type="submit" class="btn btn--primary btn--lg feedback-submit" id="feedback-submit-btn">
+              <span class="feedback-submit__text">Submit Feedback</span>
+              <svg class="icon icon--sm feedback-submit__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </button>
+            <p class="feedback-privacy-note">No account or email required.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#home" class="brand" aria-label="MINDTRACK Home">
+            <img src="assets/icon.png" alt="MINDTRACK logo" class="brand__logo" width="32" height="32" loading="lazy" />
+            <span class="brand__name">MINDTRACK</span>
+          </a>
+          <p class="footer__desc">
+            A focused, offline-first Android productivity app bringing tasks, Pomodoro focus sessions, daily planning
+            and insights together.
+          </p>
+        </div>
+
+        <div class="footer__links">
+          <div class="footer__col">
+            <h3 class="footer__heading">Navigation</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#how-it-works">How It Works</a></li>
+              <li><a href="#about">About</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h3 class="footer__heading">Features</h3>
+            <ul>
+              <li><a href="#features" data-select-feature="tasks">Tasks</a></li>
+              <li><a href="#features" data-select-feature="focus">Focus Timer</a></li>
+              <li><a href="#features" data-select-feature="planner">Daily Planner</a></li>
+              <li><a href="#features" data-select-feature="insights">Insights</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h3 class="footer__heading">Get the App</h3>
+            <ul>
+              <li><a href="#download">Download for Android</a></li>
+              <li><a href="#offline">Offline-First</a></li>
+              <li><a href="#feedback">Send Feedback</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; <span id="current-year"></span> MINDTRACK. All rights reserved.</p>
+        <p class="footer__credit">Made by Ayush</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top" hidden>
+    <svg class="icon icon--md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <line x1="12" y1="19" x2="12" y2="5" />
+      <polyline points="5 12 12 5 19 12" />
+    </svg>
+  </button>
+
+  <script src="js/script.js" defer></script>
+</body>
+
+</html>
